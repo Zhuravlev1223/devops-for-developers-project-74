@@ -1,5 +1,7 @@
 [![push](https://github.com/dmitritoe/devops-for-developers-project-74/actions/workflows/push.yml/badge.svg)](https://github.com/dmitritoe/devops-for-developers-project-74/actions/workflows/push.yml)
 
+[DevOps for Developers](https://hexlet.io/courses/devops-for-developers)
+
 ## Требования
 - Docker Engine >= 20.10
 - Docker Compose >= 1.27
