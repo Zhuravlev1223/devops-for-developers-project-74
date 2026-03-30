@@ -8,4 +8,5 @@ RUN cd code && npm ci --only=production
 
 COPY code/ code/
 
-CMD ["make", "test"]
+WORKDIR /app/code
+CMD ["npm", "test"]
