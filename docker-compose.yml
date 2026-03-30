@@ -1,6 +1,8 @@
+version: '3.8'
+
 services:
   app:
-build:
+    build:
       context: ./code
       dockerfile: ../Dockerfile.production
     image: dmitritoe/devops-for-developers-project-74
@@ -24,3 +26,4 @@ build:
       interval: 5s
       timeout: 5s
       retries: 5
+
