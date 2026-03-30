@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile.production
     image: dmitritoe/devops-for-developers-project-74
     working_dir: /app
-    command: make test
+    command: make -f Makefile.test test
     env_file: .env
     environment:
       - NODE_ENV=test

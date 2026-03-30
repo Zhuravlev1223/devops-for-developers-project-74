@@ -35,8 +35,3 @@ test:
 
 test-docker:
 	docker compose -f ../docker-compose.yml up --abort-on-container-exit --exit-code-from app
-ci:
-	NODE_ENV=test docker compose -f ../docker-compose.yml up --abort-on-container-exit
-
-test-docker:
-	NODE_ENV=test docker compose -f ../docker-compose.yml up --abort-on-container-exit --exit-code-from app
