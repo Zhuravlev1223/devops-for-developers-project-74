@@ -25,7 +25,9 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Run docker-compose tests
-      run: cd code && make ci
+      run: |
+        cd code
+        docker compose -f ../docker-compose.yml up --abort-on-container-exit
 
     - name: Build and push
       run: |
