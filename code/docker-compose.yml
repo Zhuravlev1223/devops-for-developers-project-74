@@ -1,8 +1,8 @@
 services:
   app:
-build:
-      context: ./code
-      dockerfile: ../Dockerfile.production
+    build:
+      context: .
+      dockerfile: Dockerfile.production
     image: dmitritoe/devops-for-developers-project-74
     working_dir: /app
     command: make test
@@ -23,4 +23,3 @@ build:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
       timeout: 5s
-      retries: 5
