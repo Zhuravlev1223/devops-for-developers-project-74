@@ -1,12 +1,11 @@
 FROM node:20.12.2
 
-WORKDIR /app
-
-COPY code/package*.json code/
-
-RUN cd code && npm ci --only=production
-
-COPY code/ code/
-
 WORKDIR /app/code
+
+COPY code/package*.json ./
+
+RUN npm ci --only=production
+
+COPY code/ ./
+
 CMD ["npm", "test"]
